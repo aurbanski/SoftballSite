@@ -1,34 +1,47 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import "../pages/mystyles.scss"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+  <nav
+    class="navbar is-primary is-fixed-top"
+    role="navigation"
+    aria-label="main navigation"
   >
     <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+      class="navbar-brand"
+      style={{ justifyContent: "center", alignItems: "center" }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <a class="navbar-item" href="https://bulma.io"></a>
+      <Link to="/">
+        <strong>{siteTitle}</strong>
+      </Link>
+      <a
+        role="button"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-  </header>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div style={{ justifyContent: "center", alignItems: "center" }}>
+          <Link style={{ paddingRight: "20px" }} to="/players/">
+            <strong>Players</strong>
+          </Link>
+          <Link style={{ paddingRight: "20px" }} to="/schedule/">
+            Schedule
+          </Link>
+        </div>
+      </div>
+    </div>
+  </nav>
 )
 
 Header.propTypes = {
