@@ -38,7 +38,7 @@ const IndexPage = () => (
         }}
       >
         <h1 className="title is-1">The Workday Boulder Softball Team</h1>
-        <h3 className="title is-3">Coming Spring 2020</h3>
+        <h3 className="title is-3">Coming Back Spring 2020</h3>
       </div>
     </div>
     <div
@@ -60,7 +60,7 @@ const IndexPage = () => (
         <h1 className="title is-1">What is Our Goal?</h1>
         <h3 className="title is-3" style={{ marginBottom: "10vh" }}>
           Our goal is to create a fun softball team for the employees in the
-          Workday Boulder office. We will be playing COED intramurals starting
+          Workday Boulder office. We will be playing CO-ED intramurals starting
           in the Spring.
         </h3>
         <TeamImage style={{ marginBottom: "20vh" }} />
