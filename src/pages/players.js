@@ -8,7 +8,7 @@ import CatImage from "../components/CatImage"
 
 const PlayersPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Players" />
     <div
       style={{ marginTop: "6rem", paddingLeft: "5vw", paddingRight: "5vw" }}
       className={"has-text-centered"}

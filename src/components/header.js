@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
             <strong>Players</strong>
           </Link>
           <Link style={{ paddingRight: "20px" }} to="/schedule/">
-            Schedule
+            <strong>Schedule</strong>
           </Link>
         </div>
       </div>

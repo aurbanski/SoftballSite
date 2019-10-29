@@ -1,5 +1,12 @@
 @charset "utf-8";
 // If need, change your variables before importing Bulma
 $primary: #7bdcb5;
+.navbar-brand a strong {
+  color: black;
+}
+
+.navbar-end a strong {
+  color: black;
+}
 
 @import "~bulma/bulma.sass";
